@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+  <medication din="98765421">
+    <name>RossValve</name>
+    <image>aorticValve.jpg</image>
+    <category>heart valve</category>
+    <units>each</units>
+    <concentration>n/a</concentration>
+    <onhand location="dispensary">5</onhand>
+    <onhand location="emergency">0</onhand>
+    <onhand location="abulance">0</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="90893845">
+    <name>Himilayan Salts</name>
+    <image>bathSalts.jpg</image>
+    <category>swelling reduction</category>
+    <units>tsp</units>
+    <concentration>98%</concentration>
+    <onhand location="dispensary">60</onhand>
+    <onhand location="emergency">10</onhand>
+    <onhand location="abulance">0</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="92397584">
+    <name>calamine lotion</name>
+    <image>calamine.jpg</image>
+    <category>rash relief</category>
+    <units>tsp</units>
+    <concentration>90%</concentration>
+    <onhand location="dispensary">800</onhand>
+    <onhand location="emergency">50</onhand>
+    <onhand location="abulance">0</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="99876587">
+    <name>Hydrocortizone</name>
+    <image>cortisone.jpg</image>
+    <category>rash relief</category>
+    <units>mg</units>
+    <concentration>1%</concentration>
+    <onhand location="dispensary">400</onhand>
+    <onhand location="emergency">20</onhand>
+    <onhand location="abulance">0</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="97988768">
+    <name>Flovent HFA</name>
+    <image>flovent.jpg</image>
+    <category>asthma relief</category>
+    <units>doses</units>
+    <concentration>125mcg</concentration>
+    <onhand location="dispensary">1000</onhand>
+    <onhand location="emergency">30</onhand>
+    <onhand location="abulance">15</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="97899798">
+    <name>heparin</name>
+    <image>heparinAnticoagulant.jpg</image>
+    <category>blood thinning</category>
+    <units>ml</units>
+    <concentration>12mg</concentration>
+    <onhand location="dispensary">400</onhand>
+    <onhand location="emergency">15</onhand>
+    <onhand location="abulance">12</onhand>
+    <onhand location="OR">60</onhand>
+  </medication>
+  <medication din="98589753">
+    <name>Irish oatmeal bath</name>
+    <image>oatmealBath.jpg</image>
+    <category>baths</category>
+    <units>oz</units>
+    <concentration>100%</concentration>
+    <onhand location="dispensary">300</onhand>
+    <onhand location="emergency">10</onhand>
+    <onhand location="abulance">0</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="97837248">
+    <name>penicillin</name>
+    <image>penicillin.jpg</image>
+    <category>antibacterial</category>
+    <units>ml</units>
+    <concentration>10mg</concentration>
+    <onhand location="dispensary">400</onhand>
+    <onhand location="emergency">25</onhand>
+    <onhand location="abulance">12</onhand>
+    <onhand location="OR">4</onhand>
+  </medication>
+  <medication din="98748734">
+    <name>ratio-salbutamol</name>
+    <image>salbutamol.jpg</image>
+    <category>asthma relief</category>
+    <units>doses</units>
+    <concentration>100mcg</concentration>
+    <onhand location="dispensary">800</onhand>
+    <onhand location="emergency">25</onhand>
+    <onhand location="abulance">5</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="98798375">
+    <name>sitzbath</name>
+    <image>SitzBath.jpg</image>
+    <category>swelling reduction</category>
+    <units>each</units>
+    <concentration>50%</concentration>
+    <onhand location="dispensary">3</onhand>
+    <onhand location="emergency">2</onhand>
+    <onhand location="abulance">0</onhand>
+    <onhand location="OR">0</onhand>
+  </medication>
+  <medication din="98798798">
+    <name>stent, arterial</name>
+    <image>stent.jpg</image>
+    <category>opening arteries</category>
+    <units>each</units>
+    <concentration>n/a</concentration>
+    <onhand location="dispensary">25</onhand>
+    <onhand location="emergency">0</onhand>
+    <onhand location="abulance">0</onhand>
+    <onhand location="OR">5</onhand>
+  </medication>
+  <medication din="97897898">
+    <name>suture</name>
+    <image>suture.jpg</image>
+    <category>closing incisions</category>
+    <units>each</units>
+    <concentration>n/a</concentration>
+    <onhand location="dispensary">2500</onhand>
+    <onhand location="emergency">500</onhand>
+    <onhand location="abulance">500</onhand>
+    <onhand location="OR">1000</onhand>
+  </medication>
+  <medication din="00559407">
+    <name>Tylenol</name>
+    <image>Tylenol.jpg</image>
+    <category>pain relief</category>
+    <units>tablets</units>
+    <concentration>500mg</concentration>
+    <onhand location="dispensary">20000</onhand>
+    <onhand location="emergency">800</onhand>
+    <onhand location="abulance">500</onhand>
+  </medication>
+  <medication din="00178403">
+    <name>Aspirin</name>
+    <image>Aspirin.jpg</image>
+    <category>pain relief</category>
+    <units>tablets</units>
+    <concentration>325mg</concentration>
+    <onhand location="dispensary">13000</onhand>
+    <onhand location="emergency">1500</onhand>
+    <onhand location="abulance">1000</onhand>
+    <onhand location="OR">500</onhand>
+  </medication>
+</dataroot>

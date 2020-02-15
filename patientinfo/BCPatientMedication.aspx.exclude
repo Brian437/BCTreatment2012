@@ -1,0 +1,63 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BCBaseSite.master" AutoEventWireup="true" CodeFile="BCPatientMedication.aspx.cs" Inherits="BCPatientMedication" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <p class="style2">
+        Patient Medication</p>
+        <div style="text-align:right">
+    Category<asp:DropDownList ID="ddCategory" runat="server" 
+        DataSourceID="dsCategory" DataTextField="name" 
+        DataValueField="categoryId" AutoPostBack="True">
+    </asp:DropDownList>
+    <br />
+    Diagnosis<asp:DropDownList ID="ddDiagnosis" runat="server" AutoPostBack="True" 
+        DataSourceID="dsDiagnosis" DataTextField="name" 
+        DataValueField="diagnosisId" ondatabound="ddDiagnosis_DataBound">
+    </asp:DropDownList>
+    <br />
+    Treatment<asp:DropDownList ID="ddTreatment" runat="server" 
+        AutoPostBack="True" DataSourceID="dtTreatment" DataTextField="name" 
+        DataValueField="treatmentId">
+    </asp:DropDownList>
+    <br />
+    </div>
+                <asp:ObjectDataSource ID="dsCategory" runat="server" 
+        SelectMethod="getCategories" TypeName="BCCategoryDAL">
+    </asp:ObjectDataSource>
+                <asp:ObjectDataSource ID="dsPatients" runat="server" SelectMethod="GetPatients" TypeName="BCPatientDAL">
+                </asp:ObjectDataSource>
+                <asp:ObjectDataSource ID="dsDiagnosis" runat="server" SelectMethod="GetDiagnosis"
+                    TypeName="BCDiagnosisDAL">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="ddCategory" Name="categoryId" 
+                            PropertyName="SelectedValue" Type="Int32" />
+                    </SelectParameters>
+    </asp:ObjectDataSource>
+                <asp:ObjectDataSource ID="dsTreatments" runat="server" SelectMethod="GetTreatment"
+                    TypeName="BCTreatmentDAL">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="ddDiagnosis" Name="diagnosisId" PropertyName="SelectedValue"
+                            Type="Int32" DefaultValue="0" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+                <asp:ObjectDataSource ID="dtTreatment" runat="server" 
+        SelectMethod="GetTreatment" TypeName="BCTreatmentDAL">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="ddDiagnosis" DefaultValue="0" 
+                            Name="diagnosisID" PropertyName="SelectedValue" Type="Int32" />
+                    </SelectParameters>
+    </asp:ObjectDataSource>
+                <asp:TextBox ID="txtTest" runat="server" AutoPostBack="True">0</asp:TextBox>
+    <asp:Button ID="btnTest" runat="server" Text="Test" />
+                <asp:GridView ID="gvTest" runat="server" 
+        DataSourceID="dsTreatments">
+    </asp:GridView>
+    <center>
+    
+    <asp:Button ID="btnAdd" runat="server" onclick="btnAdd_Click" Text="Add" />
+    <asp:Button ID="btnClear" runat="server" Text="Clear" 
+        onclick="btnClear_Click" />
+    </center>
+    <br />
+    </asp:Content>

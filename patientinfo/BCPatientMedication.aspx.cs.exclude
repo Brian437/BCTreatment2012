@@ -1,0 +1,72 @@
+﻿/* Brian Chaves
+ * November 21
+ * Assinment 6
+ * Patintent Medication web page
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+
+public partial class BCPatientMedication : System.Web.UI.Page
+{
+    List<string> lstSelectedMedication = new List<string>();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            
+        }
+    }
+    /// <summary>
+    /// This method will keep treatment dropdown list up to date
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void ddDiagnosis_DataBound(object sender, EventArgs e)
+    {
+        //ddTreatment.DataBind();
+    }
+    /// <summary>
+    /// This method will keep the medication grid updated
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    //protected void ddTreatment_DataBound(object sender, EventArgs e)
+    //{
+    //    grdMedication.DataBind();
+    //}
+    /// <summary>
+    /// Adds items to the selected medication grid
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnAdd_Click(object sender, EventArgs e)
+    {
+        //try
+        //{
+        //    lstSelectedMedication.Add(grdMedication.SelectedValue.ToString() + " " + grdMedication.SelectedRow.Cells[2].Text);
+        //    grdSelectedMedication.DataSource = lstSelectedMedication;
+        //    grdSelectedMedication.DataBind();
+        //}
+        //catch
+        //{
+
+        //}
+    }
+    /// <summary>
+    /// Clear button will clear the list
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnClear_Click(object sender, EventArgs e)
+    {
+        //lstSelectedMedication.Clear();
+        //grdSelectedMedication.DataSource = lstSelectedMedication;
+        //grdSelectedMedication.DataBind();
+    }
+}

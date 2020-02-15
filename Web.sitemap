@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Default.aspx" title="Home"  description="">
+
+		<siteMapNode url="" title="Patients" description="">
+			<siteMapNode url="~/patientinfo/BCPatient.aspx" title="Patient Info" description="" />
+			<siteMapNode url="~/patientinfo/BCPatientMedication.aspx" title="Patient Medication" description="" />
+			<siteMapNode url="~/XML/BCMedication.aspx" title="Medication List" description="" />
+		</siteMapNode>
+
+
+		<siteMapNode url="" title="Account Services" description="">
+			<siteMapNode url="~/Login.aspx" title="Logon" description="" />
+			<siteMapNode url="~/BCNewAccount.aspx" title="Add Account" description="" />
+			<siteMapNode url="~/accounts/BCChangePassword.aspx" title="Change Password" description="" />
+		</siteMapNode>
+
+
+		<siteMapNode url="" title="Administration" description="">
+			<siteMapNode url="~/admin/BCCategoryMaintenance.aspx" title="Category Maintenance" description="" />
+			<siteMapNode url="~/admin/BCDiagnosisMaintenance.aspx" title="Plot Maintenance" description="" />
+			<siteMapNode url="~/admin/BCTreatmentBrowse.aspx" title="Treatment Browse" description="" />
+      <siteMapNode url="~/admin/BCMedicationMaintenance.aspx" title="Medication Maintenance" description="" />
+		</siteMapNode>
+
+    <siteMapNode url="~/BCClassTester.aspx" title="Class Tester"  description="" />
+    
+	</siteMapNode>
+	
+</siteMap>

@@ -1,0 +1,47 @@
+﻿/*
+    Brian Chaves
+    September 12,2012
+    Assinment 1
+    
+    Style sheet
+*/
+
+body
+{
+    background-color: blue;
+    text-align:center;
+}
+
+.pageBody
+{
+    width: 900px;
+    background-color: #E8F4EA;
+    text-align:center;
+}
+
+.links
+{
+    clear: both;
+    font-size: small;
+    text-align: left;
+}
+
+.header
+{
+}
+.contentArea
+{
+    clear: both;
+}
+.footer
+{
+    clear: both;
+}
+#imgCaduceus
+{
+    float: left;
+}
+.siteMap
+{
+    text-align:left;
+}

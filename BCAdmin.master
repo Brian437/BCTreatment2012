@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BCAdmin.master.cs" Inherits="BCBaseSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+    Brian Chaves
+    September 12,2012
+    Assinment 1
+
+    Master Page
+-->
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-align: center;
+        }
+        .style2
+        {
+            font-size: xx-large;
+        }
+        .style3
+        {
+            clear: both;
+            text-align: center;
+        }
+    </style>
+    <link href="BCAdmin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <center>
+        <form id="form1" runat="server" class="pageBody">
+        <div class="header">
+            <div class="style1">
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/doctor.jpg" Style="text-align: left;
+                    float: left" />
+                <span class="style2">Treatment System<br /></span>
+                <div style="text-align:right; font-size:12">
+                &nbsp;<asp:LoginView ID="LoginView1" runat="server">
+                    <AnonymousTemplate>
+                        You Should not be able to see this since you are not an admin
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        You Should not be able to see this since you are not an admin
+                    </LoggedInTemplate>
+                    <RoleGroups>
+                        <asp:RoleGroup Roles="Administration">
+                            <ContentTemplate>
+                                watch it,<asp:LoginName ID="LoginName1" runat="server" />
+                                <br /><asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                &nbsp;
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                        <asp:RoleGroup Roles="Staff">
+                            <ContentTemplate>
+                                You Should not be able to see this since you are not an admin
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
+                </asp:LoginView>
+            </div>
+        </div>
+            <div class="links">
+                <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="Web.sitemap"></asp:XmlDataSource>
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+                    StaticDisplayLevels="2" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana"
+                    Font-Size="0.8em" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </div>
+            <div class="siteMap">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+                >
+            </div>
+        </div>
+        <div class="contentArea">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="style3">
+            <asp:Image ID="imgCaduceus" runat="server" ImageUrl="~/Images/caduceus.gif" Style="text-align: left" />
+            Brian Chaves<br />
+            Computer Programmer/Analyst (Co-op) , Section 2<br />
+            E-Mail: <a href="mailTo:bchaves-cc@conestogac.on.ca">bchaves-cc@conestogac.on.ca</a></div>
+        </form>
+    </center>
+</body>
+</html>
